@@ -1,0 +1,299 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.header-text{  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 3px whitesmoke solid;
+    color: whitesmoke;
+    
+    top: 75%;
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    background-color: rgba(10, 10, 10, 0.3);
+}
+.master.title{
+    font-size: 48px;
+}
+.master.subtitle{
+    font-size: 32px;
+}
+.start{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 3px whitesmoke solid;
+    padding: 0.35%;
+    border-radius: 8%;
+    margin-bottom: 1%;
+}
+.proj{
+    position: relative;
+    background: white;
+}
+@media screen and (min-width: 1036px){
+    header{
+        background-color: rgba(10, 10, 10, 0.85);
+        color: whitesmoke;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    .logo{
+        padding: 5px;
+        width: 60px;
+        margin-left: 2.5%;
+    }
+    .lih a{
+        list-style: none;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .lih{
+        float: left;
+        padding: 20px 10px 20px 10px;
+    }
+    .lih:hover a{
+        background-color: whitesmoke;
+        color: black;
+    }
+    #main_menu{
+        margin-top: 0px;
+        margin-bottom: 0;
+        display: inline;
+        float: right;
+        margin-right: 2.5%;
+        padding-bottom: 10px;
+    }
+    .header{
+        background-image: url("./imgs/solar_plant2b.jpg");
+        height: 100%;
+        justify-content: center;
+        background-size: cover;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.5%;
+    }
+    .proj.content{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .proj.about.title{
+        display: grid;
+        margin-top: 0;
+        padding: 40px;
+        padding-left: 20px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-thickness: 10px;
+        text-decoration-style: solid;
+    }
+    .proj.about.text{
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        
+        padding-left: 5%;
+        padding-right: 5%;
+
+        height: 100%;
+    }
+    .img_text{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .img_size{
+        width: 45%;
+    }
+
+    .hor_menu{
+        border: 1px darkslategray solid;
+        padding-left: 0;
+        border-radius: 5px;
+        padding-top: 0.75%;
+        padding-bottom: 0.75%;
+    }
+    .hor_menu li{
+        display: inline;
+        padding: 10px;
+        
+    }
+    .subtopic{
+        background-color: whitesmoke;
+        text-decoration: none;
+        color: black;
+    }
+    .subtopic:hover{
+        background-color: whitesmoke;
+        color: grey;
+    }
+    .types{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        align-items: center;
+    }
+    .proj.subtypes.title{
+        background-color: whitesmoke;
+    }
+    .proj.subtypes.text{
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: whitesmoke;
+        text-align: justify;
+    }
+    .contato{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        background-color: white;
+    }
+    .pe{
+        background-color: whitesmoke;
+        color: lightslategray;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1035px){
+    header{
+        background-color: rgba(10, 10, 10, 0.85);
+        color: whitesmoke;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    .logo{
+        padding: 5px;
+        width: 60px;
+        margin-left: 2.5%;
+    }
+    .lih{
+        float: left;
+        padding: 20px 10px 20px 10px;
+        list-style: none;
+        text-decoration: none;
+    }
+    .lih:hover{
+        background-color: whitesmoke;
+        color: lightslategray;
+    }
+    #main_menu{
+        visibility: hidden;
+    }
+    .header{
+        background-image: url("./imgs/hydro_power_plant_mobile.jpg");
+        height: 100%;
+        padding: 0%;
+        justify-content: center;
+        background-size: cover;
+    }
+    .proj.about.title{
+        margin-top: 80;
+        text-align: center;
+        font-size: 28px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.5%;
+    }
+    .proj.content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .proj.about.text{
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        
+        padding-left: 5%;
+        padding-right: 5%;
+
+        height: 100%;
+    }
+    .img_text{
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .img_size{
+        width: 45%;
+    }
+
+    .hor_menu{
+        border: 1px darkslategray solid;
+        padding-left: 0;
+        border-radius: 5px;
+        padding-top: 0.75%;
+        padding-bottom: 0.75%;
+        justify-content: left;
+    }
+    .hor_menu li{
+        display: inline;
+        padding: 10px;
+    }
+    .subtopic{
+        background-color: whitesmoke;
+        text-decoration: none;
+        color: black;
+    }
+    .subtopic:hover{
+        background-color: whitesmoke;
+        color: grey;
+    }
+    .types{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        align-items: center;
+    }
+    .proj.subtypes.title{
+        background-color: whitesmoke;
+    }
+    .proj.subtypes.text{
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: whitesmoke;
+        text-align: justify;
+    }
+    .contato{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        background-color: white;
+    }
+    .pe{
+        background-color: whitesmoke;
+        color: lightslategray;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
